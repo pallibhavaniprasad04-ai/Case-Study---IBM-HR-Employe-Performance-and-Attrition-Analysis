@@ -30,7 +30,7 @@
 - **Multivariate Analysis**: Combined influence of JobRole, Income & Satisfaction
 
 ## 📈 3️⃣ Visualization & Insight Generation
-- Created countplots, boxplots, and violinplots using Seaborn
+- Created countplots, boxplots, and plots using Seaborn
 - Compared attrition patterns visually for HR decision-making
 
 ## 🔍 Key Questions
@@ -41,7 +41,7 @@ Question	Description
 - ⏱️ Does overtime increase attrition?	Check work pressure link
 - 😀 Does job satisfaction reduce attrition?	Evaluate employee happiness
 
-## Insight & Summary Observation
+## Insight & Findings
 - OverTime Effect	Employees with **OverTime** = Yes have 4× higher attrition.
 - **Salary** Factor	Low-income employees are more likely to quit.
 - **Age** Group	Employees aged <30 years show highest attrition.
