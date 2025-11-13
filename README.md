@@ -1,122 +1,60 @@
 # Case-Study---IBM-HR-Employe-Performance-and-Attrition-Analysis
-🎬 Movie Dataset Analysis – Python Project
-📌 Project Overview
-This project focuses on analyzing a movie dataset to uncover insights related to movie characteristics, genres, ratings, revenues, and trends over time. The analysis incorporates data cleaning, univariate/bivariate/multivariate analysis, and visualization to understand relationships among variables such as budget, revenue, runtime, votes, ratings, and genres.
 
-The goal is to apply Python data analysis techniques and generate insights into what makes a movie successful, how trends have evolved over time, and how genres perform across different metrics.
+📘 **Project Overview**
 
-🛠️ Tech Stack & Libraries
+*This project explores employee attrition patterns using the IBM HR Analytics Employee Attrition Dataset.
+The goal is to uncover why employees leave the organization and identify actionable insights to help HR improve retention.
+
+#Rather than focusing on machine learning, the project emphasize:
+#Data cleaning
+#Exploratory Data Analysis (EDA)
+#Visualization-driven insights**
+
+🛠️ **Tech Stack & Libraries**
 The following libraries are used in this project:
 
-pandas → For data loading, cleaning, and manipulation
+1.pandas → For data loading, cleaning, and manipulation
 
-numpy → For numerical operations and summary statistics
+2.numpy → For numerical operations and summary statistics
 
-matplotlib & seaborn → For data visualization (histograms, scatter plots, bar charts, heatmaps, etc.)
+3.matplotlib & seaborn → For data visualization (histograms, scatter plots, bar charts, heatmaps, etc.)
 
-scipy → For correlation and statistical analysis
+🧩 **Project Tasks**
+🧹 1️⃣ Data Understanding & Cleaning
 
-datetime → For handling release dates and trends over time
+Loaded dataset and inspected structure
 
-📂 Project Tasks & Key Questions
-1. Project Setup and Data Loading
-✔ Load dataset into pandas DataFrame. ✔ Identify dataset shape (rows = movies, columns = attributes).
+Removed unnecessary columns (EmployeeCount, Over18, StandardHours, etc.)
 
-Key Questions:
+Checked for duplicates and missing values
 
-What libraries are required, and why?
+Treated outliers in MonthlyIncome, YearsAtCompany, TotalWorkingYears
 
-What is the dataset shape and meaning of rows/columns?
+📊 2️⃣ Exploratory Data Analysis (EDA)
 
-2. Data Overview and Basic Exploration
-✔ Used .info() to check data types & missing values. ✔ Used .describe() for statistical summary.
+Univariate Analysis: Distribution of Age, MonthlyIncome, JobSatisfaction
 
-Key Questions:
-What issues exist in data types/missing values?
+Bivariate Analysis: Attrition vs JobRole, Department, OverTime, Salary
 
-What do mean, median, and distribution tell us?
+Multivariate Analysis: Combined influence of JobRole, Income & Satisfaction
 
-3. Data Cleaning
-✔ Handled missing values appropriately. ✔ Converted columns like release dates, ratings into correct formats. ✔ Detected and treated outliers in budget/revenue.
+📈 3️⃣ Visualization & Insight Generation
 
-Key Questions:
-Which columns have missing values?
+Created countplots, boxplots, and violinplots using Seaborn
 
-Which columns need type conversion and why?
+Compared attrition patterns visually for HR decision-making
 
-4. Univariate Analysis
-✔ Explored runtime distribution with histograms. ✔ Checked most frequent genres with bar plots.
-
-Key Questions:
-What is the distribution of runtimes?
-
-What are the most common genres?
-
-5. Bivariate Analysis
-✔ Scatter plots to check runtime vs rating. ✔ Boxplots to compare ratings across genres. ✔ Correlation analysis between votes, budget, and revenue.
-
-Key Questions:
-Relationship between runtime & rating?
-
-Do ratings vary by genre?
-
-Is there correlation between votes, budget, and revenue?
-
-6. Genre-Specific Analysis
-✔ Average rating calculated per genre. ✔ Trend analysis of genre popularity over time.
-
-Key Questions:
-Which genre has the highest average rating?
-
-How does genre popularity vary over time?
-
-7. Year & Trend Analysis
-✔ Plotted ratings over the years. ✔ Plotted number of movie releases per year.
-
-Key Questions:
-How has average rating changed over the years?
-
-Which years had highest & lowest movie releases?
-
-8. Multivariate Analysis
-✔ Genre popularity by decade. ✔ Heatmaps/pairplots of budget, revenue, and scores. ✔ Grouped by genre & year for rating comparisons.
-
-Key Questions:
-Which genres dominate in each decade?
-
-How do budget/revenue/scores relate?
-
-Are certain genres/years linked to higher ratings?
-
-📊 Insights & Findings
-Runtimes → Most movies cluster around 90–120 minutes.
-
-Genres → Drama and Comedy dominate in frequency, but Action/Adventure contribute more revenue.
-
-Ratings → Documentaries and niche genres often receive higher ratings despite fewer releases.
-
-Revenue & Budget → Strong correlation between budget and revenue, but outliers exist (low-budget hits, high-budget flops).
-
-Trends → Movie releases peaked in the 2010s and surged post-2020 due to streaming platforms.
-
-🔎 Insights and Summary
-Drama’s Consistent Dominance → Drama has been the most released genre since the 1990s, reflecting its strong and enduring global appeal.
-
-Genre Growth Post-2000 → After 2000, all major genres — especially Comedy, Thriller, and Action — saw a sharp rise in releases, driven by digital platforms and global distribution.
-
-2023 Decline & 2022 Peak → 2022 marked the peak in genre releases, possibly due to a post-COVID backlog, followed by a noticeable dip in 2023, likely due to industry disruptions or incomplete data.
-
-❓ Future Exploration
-Additional questions to explore with this dataset:
-Does release season (month or quarter) affect ratings or genre performance?
-
-Do genres with more releases also tend to receive higher or lower average ratings?
-
-How have niche genres (e.g., Sci-Fi, Documentary, Animation) evolved over time in terms of both popularity and ratings?
-
-🚀 Future Improvements
-Add ML models to predict movie success.
-
-Explore NLP on reviews to connect sentiment with ratings.
-
-Build interactive dashboards (Plotly/Power BI) for dynamic trend analysis.
+🔍 Key Questions
+Question	Description
+👥 What’s the average employee age?	Find workforce demographics
+💼 Which job roles have the highest attrition?	Identify high-risk roles
+💰 Does low income lead to higher attrition?	Analyze salary impact
+⏱️ Does overtime increase attrition?	Check work pressure link
+😀 Does job satisfaction reduce attrition?	Evaluate employee happiness
+💡 Key Insights
+Insight	Observation
+OverTime Effect	Employees with OverTime = Yes have 4× higher attrition.
+Salary Factor	Low-income employees are more likely to quit.
+Age Group	Employees aged <30 years show highest attrition.
+Department	Sales and Research roles have higher turnover.
+Job Satisfaction	High satisfaction reduces attrition risk significantly.
