@@ -4,17 +4,17 @@
 
 - This project explores employee attrition patterns using the IBM HR Analytics Employee Attrition Dataset.
 - The goal is to uncover why employees leave the organization and identify actionable insights to help HR improve retention.
-
 - Rather than focusing on machine learning, the project emphasize:
-- Data cleaning
+  
+## Data cleaning 
 - Exploratory Data Analysis (EDA)
 - Visualization-driven insights**
 
 🛠️ **Tech Stack & Libraries**
 - The following libraries are used in this project:
-**pandas** → For data loading, cleaning, and manipulation
-**numpy** → For numerical operations and summary statistics
-**matplotlib & seaborn** → For data visualization (histograms, scatter plots, bar charts, heatmaps, etc.)
+- **pandas** → For data loading, cleaning, and manipulation
+- **numpy** → For numerical operations and summary statistics
+- **matplotlib & seaborn** → For data visualization (histograms, scatter plots, bar charts, heatmaps, etc.)
 
 🧩 **Project Tasks**
 ## 🧹 Data Understanding & Cleaning
@@ -25,9 +25,9 @@
 
 ## 📊 2️⃣ Exploratory Data Analysis (EDA)
 
-**Univariate Analysis**: Distribution of Age, MonthlyIncome, JobSatisfaction
-**Bivariate Analysis**: Attrition vs JobRole, Department, OverTime, Salary
-**Multivariate Analysis**: Combined influence of JobRole, Income & Satisfaction
+- **Univariate Analysis**: Distribution of Age, MonthlyIncome, JobSatisfaction
+- **Bivariate Analysis**: Attrition vs JobRole, Department, OverTime, Salary
+- **Multivariate Analysis**: Combined influence of JobRole, Income & Satisfaction
 
 ## 📈 3️⃣ Visualization & Insight Generation
 - Created countplots, boxplots, and violinplots using Seaborn
