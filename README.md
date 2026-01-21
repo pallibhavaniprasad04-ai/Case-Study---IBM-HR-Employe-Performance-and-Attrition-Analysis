@@ -1,4 +1,4 @@
-# Case-Study---IBM-HR-Employe-Performance-and-Attrition-Analysis
+# Case-Study---HR-Employe-Performance-and-Attrition-Analysis
 
 📘 **Project Overview**
 
